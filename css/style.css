@@ -1,0 +1,114 @@
+body{
+    background-image: url(../imgs/background.jpg);
+    background-size: cover;
+    font-family: 'Cinzel', serif;
+   
+}
+
+.heading{
+    width: 1000px;
+    margin-top:70px;
+    height: 60vh;
+    padding: 5%;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    left: 200px;
+}
+#start{
+    font-size: 3.5em;
+    font-weight: bolder;
+    width:500px;
+    height:auto;
+    border: 1px solid #a1a9bd;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:250px;
+    top:150px;
+    color : black;
+}
+#start:hover{
+    border: 3px solid rgb(125, 221, 216);
+    color : rgb(26, 185, 177);
+}
+
+#question p{
+    margin : 0;
+    padding : 15px;
+    font-size: 2.25em;
+    font-family: baskerville;
+    text-align: center;
+}
+
+.choice:hover{
+    border : 2px solid grey;
+    font-weight: bold;
+}
+
+#timer{
+    position: absolute;
+    height : 58px;
+    width : 120px;
+    bottom : 12px;
+    text-align: center;
+    border: 2px solid #a1a9bd;
+    border-radius: 20px;
+}
+#counter{
+    font-size: 1em;
+}
+
+#ScoreBar{
+    width : 5000px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+.prog{
+    width : 15px;
+    height : 15px;
+    border: 1px solid #a1a9bd;
+    display: inline-block;
+    border-radius: 25%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+
+
+#scoreContainer p{
+    position: absolute;
+    display: block;
+    width : 590px;
+    height :59px;
+    top:620px;
+    left:425px;
+    background-color: white;
+    border: 1px solid #a1a9bd;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.choice{
+    width: 350px;
+    height: 60px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    border: 2px solid #a1a9bd;
+    border-radius: 10px;
+    margin: 20px;
+    color: black;
+    position: relative;
+    left: 60px;
+
+}
