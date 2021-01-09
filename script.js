@@ -62,6 +62,7 @@ const fourthChoice = document.getElementById("fourth");
 const progress = document.getElementById("ScoreBar");
 const scoreCon = document.getElementById("scoreContainer");
 
+
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
@@ -78,6 +79,7 @@ function renderQuestion(){
     thirdChoice.innerHTML = Q.thirdChoice;
     fourthChoice.innerHTML = Q.fourthChoice;
 }
+
 
 startContainer.addEventListener("click",startQuiz);
 
@@ -154,17 +156,34 @@ function wrongAnswer(){
     document.getElementById(runningQuestion).style.backgroundColor = "red";
 }
 
+//function to save score to local storage
+// function to save name to local storage
+// function saveName(){
+//     const nameVal = document.getElementById('name').value
+//     document.getElementById("demo").innerHTML =nameVal
+   
+// }
+
+// function getName(){
+//     const getPlayer = localStorage.getItem("userName");
+//     console.log('Player', getPlayer)
+// }
+
 // score render
 function scoreRender(){
-
+    const nameVal = document.getElementById('name').value
+   // document.getElementById("demo").innerHTML =nameVal
+        
+  if (nameVal !== null){
     scoreCon.style.display = "block";
-    
-    
-    // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length);
     
     // choose the image based on the scorePerCent
     
-    scoreCon.innerHTML += "<p> Your Score: "+ scorePerCent +"%</p>";
+    scoreCon.innerHTML += "<p>" + nameVal + " Your Score is: " + scorePerCent +"%</p>";
+  } else{
+      return ''
+  }
+ 
 }
 
